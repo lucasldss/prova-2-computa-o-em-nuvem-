@@ -1,0 +1,31 @@
+questão 1- qual a difeerença entre IaaS e SaaS? cite um exemplo de utilizaçâo de casa modelo.
+
+Resposta:
+
+IaaS: você aluga a estrutura (computadores na internet) e monta tudo sozinho. Ex.: AWS.
+
+SaaS: você usa o programa pronto, sem se preocupar com nada. Ex.: Gmail.
+
+
+
+
+questao 2- uma empresa utiliza servidores proprios e tambem recursos de um provador de nuvem publica. qual modelo de implementação em nuvem essa impresa utiliza?
+
+Resposta:
+
+Nuvem híbrida.
+
+A empresa combina uma infraestrutura própria (privada) com recursos de uma nuvem pública, e os dois ambientes trabalham de forma integrada.
+
+
+
+Questao 3- qual e a principal diferença entre uma maquina virtual e um conteiner?
+
+Resposta:
+
+Máquina virtual (VM): simula um computador completo, com seu próprio sistema operacional. É mais pesada e demora mais para iniciar.
+
+Contêiner: compartilha o sistema operacional da máquina hospedeira e isola apenas o aplicativo e suas dependências. É mais leve e inicia rapidamente.
+
+Diferença principal: a VM virtualiza o hardware (cada uma tem seu próprio SO), enquanto o contêiner virtualiza apenas o sistema operacional (todos compartilham o mesmo kernel).
+
