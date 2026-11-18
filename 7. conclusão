@@ -1,0 +1,3 @@
+Durante a atividade prática, aprendi a empacotar aplicações com Docker, criando uma imagem e executando contêineres leves e portáteis a partir dela. 
+Em seguida, usei o Kubernetes para gerenciar esses contêineres por meio de um Deployment, que mantém o número de réplicas desejado. Ao excluir um Pod, observei o self-healing: o Kubernetes criou outro automaticamente. 
+Também usei um Service para dar um endereço fixo de acesso aos Pods, mesmo com a troca deles. Concluí que o Docker cuida do empacotamento e o Kubernetes, da disponibilidade e da escalabilidade.
