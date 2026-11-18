@@ -1,0 +1,49 @@
+questao 1- qual e a diferença entre uma imagem docker e um conteiner em execuçao?
+
+responsta: 
+Imagem Docker: é o modelo, uma “receita” pronta e imutável, com o aplicativo, as dependências e as configurações. Ela fica parada, apenas armazenada.
+
+Contêiner em execução: é a imagem sendo executada, ou seja, uma instância viva e ativa dela.
+
+Analogia: a imagem é a planta de uma casa; o contêiner é a casa construída e habitada. Com uma mesma imagem você pode criar vários contêineres.
+
+
+
+
+
+questão 2- qual e a funçao de um deployment no kubernetes?
+
+Resposta:
+Deployment: define quantas cópias (réplicas) de um aplicativo devem estar rodando no Kubernetes e garante que esse número seja mantido.
+
+Funções principais:
+
+Mantém o número desejado de Pods ativos (se um cair, cria outro).
+Permite atualizar a versão do aplicativo sem tirar do ar.
+Permite voltar para uma versão anterior se algo der errado.
+Facilita aumentar ou diminuir as réplicas (escalabilidade).
+
+
+
+
+
+questao 3- o que aconteceu quando voce excluiu um Pod? por que isso aconteceu?
+
+resposta:
+O que aconteceu: ao excluir um Pod que pertence a um Deployment, o Kubernetes criou automaticamente um novo Pod para substituír
+
+Por quê: o Deployment tem um número desejado de réplicas definido. Quando você exclui um Pod, o número real fica menor que o desejado, e o Kubernetes age para corrigir isso e voltar ao estado desejado. (self-healing) (autorrecuperação).
+
+
+
+
+questao 4- qual a finalidade de um service no  kubernets
+
+resposta:
+Service: dá um endereço fixo aos Pods e distribui o tráfego entre eles.
+
+Por quê: os Pods mudam de IP quando são recriados, e o Service mantém o acesso estável.
+
+Tipos: ClusterIP (interno), NodePort (externo via porta) e LoadBalancer (balanceador externo).
+
+
